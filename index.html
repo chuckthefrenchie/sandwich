@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome/ Google Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Quicksand&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <title>Sandwich Maker</title>
+</head>
+
+<body>
+    <div class="main-content">
+
+        <div class="left-column">
+            <p>Ingredients</p>
+            <div class="ingredients">
+                <input type="button" value="peanut-butter" onclick="ingredientSelected(this.value)"> 
+
+                <input type="button" value="apricot-jam" onclick="ingredientSelected(this.value)"> 
+
+                <input type="button" value="bananas" onclick="ingredientSelected(this.value)">
+
+                <input type="button" value="honey" onclick="ingredientSelected(this.value)">
+
+                <input type="button" value="chocolate-chips" onclick="ingredientSelected(this.value)">
+
+                <input type="button" value="toast" onclick="ingredientSelected(this.value)">
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="name-input">
+                <input type="text" maxlength="10" id='sandwichName'>
+                <input type="button" value="Name your Sandwich" onclick="saveSandwichName(this.value)">
+            </div>
+            
+            <div class="selected-sandwich">
+                <p>Selected Sandwitch picture</p>
+
+                <div class="selected-ingredients">
+                    <p>Selected Sandwitch Ingredients</p>
+                    <div id="sandwich-ingredients">
+                    </div>
+                </div>
+            
+            </div>
+
+            <button class="saveSandwich" onclick="saveSandwich()">Save Your Sandwich</button>
+            
+            <p>here is the list of all sandwiches, click Edit to modify any sandwich</p>
+            <div id="all-sandwiches">
+            </div>
+        </div>
+    </div>
+    <script src="sandwich.js"></script>
+</body>
+
+</html>

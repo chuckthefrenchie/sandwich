@@ -1,0 +1,40 @@
+.main-content {
+    display: flex;
+    width: 100%;
+    height: 50em;
+}
+
+.left-column, .right-column, .ingredients {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 12px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.left-column {
+    width: 30%; 
+    height: 100%;
+}
+
+.right-column {
+    width: 70%; 
+    height: 100%;
+    margin-left: 50px;
+}
+
+.selected-sandwich {
+    height: 30em;
+}
+
+.saveSandwich {
+    width: 15em;
+    cursor: pointer;
+}
+/* .all-sandwiches{
+    display: flex;
+    align-self: flex-end;
+} */
